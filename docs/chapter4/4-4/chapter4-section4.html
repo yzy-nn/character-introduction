@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   4-4
+  </title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter4 - section4</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="thumbnail4-4.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>0:44.70~0:48.10</td>
+        <td>P/Q</td>
+        <td>double</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        角度のみが一定の条件のもとランダムな弾幕です。<br>
+        初音ミク右手部を中心として回転する同心円状弾幕に関して、画面外から生成される円形弾幕と合わせて回避しながら、その中心近傍に向かうことを目的としています。<br>
+        角度のみがランダムであることから、飛び越える・潜り抜けるといった回避行動を取るタイミングや位置を固定化できることを利用することで攻略がしやすくなるかもしれません。<br>
+        0:47.70において初音ミク右手部を中心として生成される星型弾幕（fig.4-4.1）については、半径が生成時の中心とプレイヤーとの距離を基準として決定され、また各時刻において中心からみたプレイヤーの角度に対して最も開いた形状をとります。<br>
+        なお、画面外から初音ミク右手部を中心として生成される円形弾幕については、生成から80step経過後に生成時のプレイヤーの位置に重なるように射出速度が決定されます。<br>
+      </p>
+      
+      <div class = im1>
+        <figure>
+          <img src="fig.4-4.1.png", alt="img">
+          <figcaption>fig.4-4.1</figcaption>
+        </figure>
+      </div>   
+    </div>
+  </div>
+</body>
+</html>
+

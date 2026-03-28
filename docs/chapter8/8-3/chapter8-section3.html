@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   8-3
+  </title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter8 - section3</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="thumbnail8-3.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>1:43.90~1:47.30</td>
+        <td>R/Q</td>
+        <td>double</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        反復型の弾幕です。<br>
+        画面下部に周期的に生成される棒状弾幕に関して、これらは生成から21step経過後（次の棒状弾幕が生成される瞬間）に、その時点のプレイヤーの位置を基準とした速さと重力を伴って鉛直上向きに発射されます。<br>
+        生成された棒状弾幕の状態が密（fig.8-3.1.a）であるか疎（fig.8-3.1.b）であるかを発射されるまでの間に判断し、それぞれの場合に対応する適切な回避行動をとる必要があります。<br>
+        なお、密状態の棒状弾幕が3回以上連続して生成されることはなく、疎状態の棒状弾幕が生成された次は必ず密状態の棒状弾幕が生成されます。<br>
+      </p>
+
+      <div class="im2">
+        <figure>
+          <img src="fig.8-3.1.a.png", alt="img">
+          <figcaption>fig.8-3.1.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.8-3.1.b.png", alt="img">
+          <figcaption>fig.8-3.1.b</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        また、8-3開始時点では必ず密状態の棒状弾幕が生成されます（fig.8-3.2）。<br>
+      </p>
+
+      <div class = im1>
+        <figure>
+          <img src="fig.8-3.2.png", alt="img">
+          <figcaption>fig.8-3.2</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        発射時の速さと重力を決定する上で参照される位置に関して、これらはそれぞれの棒状弾幕について1回前に生成された棒状弾幕の状態により異なります。<br>
+        具体的には、疎→密の順番で生成される場合を(i)、密→密の順番で生成される場合を(ii)、密→疎の順番で生成される場合を(iii)として、それぞれの場合における放物線運動の頂点にあたる座標が<br><br>
+
+        (i)   : プレイヤーに対して10ドット上（fig.8-3.3.a）<br>
+        (ii)  : プレイヤーに対して10ドット下（fig.8-3.3.b）<br>
+        (iii) : プレイヤーと同じ高さ（fig.8-3.3.c）<br><br>
+
+        となっており、特に(i)と(ii)の場合に関して回避に最低限要するジャンプの高さが異なっていることに注意が必要です。<br>
+        なお、初期状態（fig.8-3.2）については便宜的に(i)として扱われます。
+      </p>
+      
+      <div class="im3">
+        <figure>
+          <img src="fig.8-3.3.a.png", alt="img">
+          <figcaption>fig.8-3.3.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.8-3.3.b.png", alt="img">
+          <figcaption>fig.8-3.3.b</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.8-3.3.c.png", alt="img">
+          <figcaption>fig.8-3.3.c</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        1:46.70において画面中央を中心として画面外側から出現する星型弾幕（fig.8-3.4）については、各時刻において中心からみたプレイヤーの角度に対して最も開いた形状をとります。<br>
+      </p>
+
+      <div class = im1>
+        <figure>
+          <img src="fig.8-3.4.png", alt="img">
+          <figcaption>fig.8-3.4</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

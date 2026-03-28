@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   11-2
+  </title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter11 - section2</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="thumbnail11-2.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>2:29.90~2:30.20</td>
+        <td>P*A</td>
+        <td>infinite</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        11-1の解答に対応する、角度のみがランダムな弾幕です。<br>
+        11-1における背景演出によって、2:29.90において画面上部を中心として生成される8方向に広がる放射状弾幕の角度を予測することができます（fig.11-2.1.a, fig.11-2.1.b）。<br>
+      </p>
+
+      <div class="im2">
+        <figure>
+          <img src="fig.11-2.1.a.png", alt="img">
+          <figcaption>fig.11-2.1.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.11-2.1.b.png", alt="img">
+          <figcaption>fig.11-2.1.b</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        11-1において画面上部を中心として画面外から生成される残像付きの円形弾幕に関して、これらは同心円状弾幕によって分割される空間を1層通過するたびに、中心に対する角度が色ごとにランダムな一定の値だけ変化し、最も内側の層に突入した時点ですべての色について特定の角度（正解の角度）に収束します（fig.11-2.2.a）。<br>
+        2:29.90において画面上部を中心として生成される8方向に広がる放射状弾幕については、その正解の角度を基準として生成されます（fig.11-2.2.b）。<br>
+        なお、残像付きの円形弾幕については同心円状弾幕によって分割される空間のうち最も内側の層に突入した時点で視認不可能となるため、正解の角度を直接観測することはできません。<br>
+        特定の色の残像付きの円形弾幕に関してその軌道を追跡し、層を通過した際の角度の変化量を見極めた上で正解の角度を予測することを目的としています。<br>
+      </p>
+
+      <div class="im2">
+        <figure>
+          <img src="fig.11-2.2.a.png", alt="img">
+          <figcaption>fig.11-2.2.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.11-2.2.b.png", alt="img">
+          <figcaption>fig.11-2.2.b</figcaption>
+        </figure>
+      </div>   
+    </div>
+  </div>
+</body>
+</html>
+
