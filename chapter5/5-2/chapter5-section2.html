@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   5-2
+  </title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter5 - section2</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="thumbnail5-2.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>1:07.20~1:13.60</td>
+        <td>R</td>
+        <td>infinite</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        反復型の弾幕です。<br>
+        fig.5-2.1に示す、周期的に生成される白色の帯状弾幕に関して、これらは形成される空間がプレイヤーの動きによって決定されます。<br>
+      </p>
+
+      <div class = im1>
+        <figure>
+          <img src="fig.5-2.1.png", alt="img">
+          <figcaption>fig.5-2.1</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        具体的には、プレイヤーが滞在する列の左右に存在する虹色の弾を中心として生成される円形領域に関して、その半径が帯状弾幕の生成が開始する15step前（画面左右から生成される正弦波状弾幕が画面中央に到達する瞬間）のプレイヤーの位置を基準として決定されます（fig.5-2.2.a, fig.5-2.2.b）。<br>
+        与えられた状況に対して、円形領域の半径の基準となる点を適切に誘導することで、回避に十分な空間を作り出すことを目的としています。<br>
+      </p>
+
+      <div class = im2>
+        <figure>
+          <img src="fig.5-2.2.a.png", alt="img">
+          <figcaption>fig.5-2.2.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.5-2.2.b.png", alt="img">
+          <figcaption>fig.5-2.2.b</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        なお、それぞれの円形領域に関してその内側に空間が形成されることから、円形領域が重複している場合にはそれらの形状が欠ける場合があります（fig.5-2.3.a, fig.5-2.3,b）。<br>
+      </p>
+
+      <div class = im2>
+        <figure>
+          <img src="fig.5-2.3.a.png", alt="img">
+          <figcaption>fig.5-2.3.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="fig.5-2.3.b.png", alt="img">
+          <figcaption>fig.5-2.3.b</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        また、画面下部に出現する足場を適宜用いることによって攻略がしやすくなるかもしれません（fig.5-2.4）。<br>
+      </p>
+
+      <div class = im1>
+        <figure>
+          <img src="fig.5-2.4.png", alt="img">
+          <figcaption>fig.5-2.4</figcaption>
+        </figure>
+      </div>     
+    </div>
+  </div>
+</body>
+</html>
+
