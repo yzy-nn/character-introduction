@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   9-3
+  </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter9 - section3</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="imgs/thumbnail9-3.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>2:03.10~2:07.80</td>
+        <td>R</td>
+        <td>infinite</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        反復型の弾幕です。<br>
+        画面中央を中心として周期的に生成される円形弾幕に関して、これらは生成から20step経過後（次の円形弾幕が生成され始める瞬間）に、その時点のプレイヤーの位置を基準とした速さを伴って発射されます。<br>
+        発射速度については発射から20step経過後（次の次の円形弾幕が生成され始める瞬間）に発射時のプレイヤーの位置に重なるように決定され、また速度を失った時点で当たり判定はなくなります。<br>
+        生成された円形弾幕の半径が、画面中央とプレイヤーとの距離に対して大きいか小さいかを瞬時に判断し、それぞれの場合に対応する適切な回避行動をとる必要があります。<br>
+        1~10発目に生成される円形弾幕に関して、半径が大きいものと小さいものについてそれぞれ5回ずつ出現し、またどちらか一方が4回以上連続して出現することはありません。<br>
+        なお、11発目（9-3の終わり際）に生成される円形弾幕については必ず半径が大きいものとなります。<br>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+

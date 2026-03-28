@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   11-9
+  </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter11 - section9</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="imgs/thumbnail11-9.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>2:39.90~2:46.20</td>
+        <td>Q+P*A</td>
+        <td>infinite</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        フラッシュ暗算を題材とした角度のみがランダムな弾幕です。<br>
+        2:39.90~2:42.30において画面中央を中心として画面外から周期的に生成されるアスタリスク状弾幕に関して、これらは3~6の方向数をとります（fig.11-9.1.a~fig.11-9.1.e）。<br>
+        なお、それぞれのアスタリスク状弾幕については、生成から24step経過後に当たり判定がなくなります。<br>
+      </p>
+
+      <div class="im3">
+        <figure>
+          <img src="imgs/fig.11-9.1.a.png", alt="img">
+          <figcaption>fig.11-9.1.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/fig.11-9.1.b.png", alt="img">
+          <figcaption>fig.11-9.1.b</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/fig.11-9.1.c.png", alt="img">
+          <figcaption>fig.11-9.1.c</figcaption>
+        </figure>
+      </div>
+
+      <div class="im3">
+        <figure>
+          <img src="imgs/fig.11-9.1.d.png", alt="img">
+          <figcaption>fig.11-9.1.d</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/fig.11-9.1.e.png", alt="img">
+          <figcaption>fig.11-9.1.e</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/blank.png", alt="img">
+        </figure>
+      </div>
+
+      <p>
+        2:42.30において画面中央を中心として生成される円形弾幕については、その方向数が2:39.90~2:42.30において出現したアスタリスク状弾幕の方向数を全て足し合わせたものとなります（fig.11-9.2）。<br>
+      </p>
+
+      <div class = im1>
+        <figure>
+          <img src="imgs/fig.11-9.2.png", alt="img">
+          <figcaption>fig.11-9.2</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        2:42.90において同心円状に整列した円形弾幕が中心に向かって折り返す際、その方向数が偶数であるか奇数であるかによって折り返された後の形状が元の形状に対して変化するかどうかが異なります（fig.11-9.3.a, fig.11-9.3.b）。<br>
+      </p>
+
+      <div class="im2">
+        <figure>
+          <img src="imgs/fig.11-9.3.a.png", alt="img">
+          <figcaption>fig.11-9.3.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/fig.11-9.3.b.png", alt="img">
+          <figcaption>fig.11-9.3.b</figcaption>
+        </figure>
+      </div>
+
+      <p>
+        したがって、出現するアスタリスク状弾幕の方向数の合計値が偶数であるか奇数であるかを判断する必要があります。<br>
+        なお、アスタリスク状弾幕の方向数の合計値に関しては39~42のいずれかの値をとり、また出現するアスタリスク状弾幕のうち、その方向数が奇数であるものは1個以上4個以下となります。<br>
+        また、2:43.30以降において画面上部を中心として生成される同心円状弾幕（fig.11-9.4）については、4-9および8-8と同様に発射源から離れ続けることで回避することができます。<br>
+      </p>
+
+      <div class = im1>
+        <figure>
+          <img src="imgs/fig.11-9.4.png", alt="img">
+          <figcaption>fig.11-9.4</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
+

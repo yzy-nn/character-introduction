@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   4-3
+  </title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>chapter4 - section3</h1>
+    <div class = thumbnail>
+      <figure>
+        <img src="imgs/thumbnail4-3.png", alt="img">
+      </figure>
+    </div>
+    
+    <table>
+      <tr>
+        <th>creator</th>
+        <th>segment</th>
+        <th>label</th>
+        <th>jump</th>
+      </tr>
+      <tr>
+        <td>NN</td>
+        <td>0:43.90~0:44.70</td>
+        <td>P*A</td>
+        <td>double</td>
+      </tr>
+    </table>
+
+    <div class="info">
+      <p>
+        4-2の解答に対応する、角度のみがランダムな弾幕です。<br>
+        初音ミク頭部を中心とする同心円状弾幕に関して、0:42.80~0:43.10において回転している最中に回転方向がそれぞれ異なる円形弾幕同士が交差するときの角度（fig.4-3.1.a, fig.4-3.1.b）が、0:43.10において発射される際に最も開く角度（fig.4-3.2）と一致している性質を利用することを目的としています。<br>
+        なお、これらの当たり判定は0:44.30において画面中央から場面転換の演出が生成された時点でなくなります。<br>
+      </p>
+
+      <div class = im2>
+        <figure>
+          <img src="imgs/fig.4-3.1.a.png", alt="img">
+          <figcaption>fig.4-3.1.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/fig.4-3.1.b.png", alt="img">
+          <figcaption>fig.4-3.1.b</figcaption>
+        </figure>
+      </div> 
+
+      <div class = im1>
+       <figure>
+         <img src="imgs/fig.4-3.2.png", alt="img">
+         <figcaption>fig.4-3.2</figcaption>
+       </figure>
+      </div>
+
+      <p>
+        また、0:43:10において初音ミク右手部を中心として生成される黒色の同心円状弾幕に関して、これらは角度および射出速度について生成時のプレイヤーの位置を基準として決定されます。<br>
+        具体的には、角度については生成時の中心から見たプレイヤーの角度を基準に振動（振幅は各時刻における中心-プレイヤー間の距離と半径との差分の二乗に比例）しており、射出速度については生成から25step経過後に射出時のプレイヤーの位置に到達するように決定されます。<br>
+        なお、これらの当たり判定は生成から25step経過後になくなります。<br>
+        以上のことから、角度を誘導する（fig.4-3.3.a）、または発射源から離れる（fig.4-3.3.b）ことによって回避することができます。<br>
+      </p>
+
+      <div class = im2>
+        <figure>
+          <img src="imgs/fig.4-3.3.a.png", alt="img">
+          <figcaption>fig.4-3.3.a</figcaption>
+        </figure>
+
+        <figure>
+          <img src="imgs/fig.4-3.3.b.png", alt="img">
+          <figcaption>fig.4-3.3.b</figcaption>
+        </figure>
+      </div> 
+
+      <p>
+        また、画面下部から生成される樹状弾幕に関して0:44:30において画面中央から場面転換の演出が生成されるまで当たり判定が存在しないことを利用することで攻略がしやすくなるかもしれません。<br>
+      </p>
+
+    </div>
+  </div>
+</body>
+</html>
+
